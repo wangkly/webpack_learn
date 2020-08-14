@@ -1,0 +1,48 @@
+{
+  "name": "webpack_learn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dll": "webpack --config webpack.config.react.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startx": "./node_modules/.bin/webpack-dev-server --config webpack.config.js",
+    "start": "NODE_ENV=development webpack-dev-server",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "babel": "npx babel-node ./src/babel-plugin-test.js",
+    "babelx": "npx babel-node ./src/babel-test.js",
+    "all": "rm -rf dist && webpack --config webpack.config.react.js && webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/parser": "^7.9.4",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/runtime": "^7.11.2",
+    "@babel/traverse": "^7.9.5",
+    "core-js": "^3.6.5",
+    "jquery": "^3.4.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/generator": "^7.9.5",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/types": "^7.9.5",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  }
+}
