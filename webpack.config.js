@@ -2,8 +2,8 @@ const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack'); //to access built-in plugins
-require("@babel/polyfill");
-require('jquery');
+// require("@babel/polyfill");
+// require('jquery');
 var MyPlugin = require('./my_plugin');
 
 module.exports={
@@ -21,7 +21,8 @@ module.exports={
         }
     },
     mode: "development", // enabled useful tools for development
-    entry:["@babel/polyfill","./src/index.js"],
+    // entry:["@babel/polyfill","./src/index.js"],
+    entry:"./src/index.js",
     output:{
         filename:'[hash:8]-bundle.js',
         path:path.resolve(__dirname,'dist'),
