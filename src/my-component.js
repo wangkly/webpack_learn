@@ -16,7 +16,7 @@ export default class MyCompoonent extends Component{
 
     render(){
         return(
-            <div>
+            <div id ='myComponent'>
                 this is my component
             </div>
         )
